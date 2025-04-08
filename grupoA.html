@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos Grupo A - Torneo LINAME Sub 18 Quillota 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #1ce8f7, #03a5aa);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .buffet-card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        .buffet-card h3 {
+            color: #d35400;
+        }
+
+        .buffet-card p {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-container">
+        <img src="https://pbs.twimg.com/profile_images/1015933869/Copia_de_Copia_de_Logo_Fevochi_400x400.JPG" alt="Logo FEVOCHI" class="header-logo">
+        <h1>Partidos Grupo A - Torneo LINAME Sub 18 Quillota 2025</h1>
+        <img src="https://www.fevochi.cl/wp-content/uploads/2025/01/CIRCUITO-NACIONAL-DE-VOLEIBOL-PLAYA-2024-32-1024x1024.png" alt="LINAME" class="header-logo">
+    </header>
+
+    <!-- Regresar -->
+    <div class="live-stream">
+        <button onclick="window.location.href='index.html';">Regresar al inicio</button>
+    </div>
+
+    <!-- Título y Grupo -->
+    <h2>Partidos Grupo A - Gimnasio Escuti Orrego</h2>
+
+    <!-- Card Promocional del Buffet -->
+    <div class="buffet-card">
+        <h3>¡Recarga Energía!</h3>
+        <p>Hoy a la hora de almuerzo VENDEREMOS RICOS COMPLETOS, para que disfrutes de un buen momento viendo buen voley</p>
+    </div>
+
+<!-- Tabla de Equipos con Ordenación Automática -->
+<div class="grupos-container">
+    <div class="grupo">
+        <h3>Equipos Grupo A</h3>
+        <table id="tabla-equipos">
+            <thead>
+                <tr>
+                    <th>Equipos</th>
+                    <th>PTS</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Boston College</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Planeta Volei La Serena</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Dragons de Rancagua</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Estadio Español</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>SLA Valdivia</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Arturo Prat de San Felipe</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            </tbody>
+        </table>
+        
+        <script>
+            // Datos iniciales de los equipos
+            let equipos = [
+                { nombre: "Boston College", pts: 10, pj: 5, pg: 5, pp: 0 },
+                { nombre: "Planeta Volei La Serena", pts: 6, pj: 5, pg: 3, pp: 2 },
+                { nombre: "Dragons de Rancagua", pts: 2, pj: 5, pg: 1, pp: 4 },
+                { nombre: "Estadio Español", pts: 8, pj: 5, pg: 4, pp: 1 },
+                { nombre: "SLA Valdivia", pts: 4, pj: 5, pg: 2, pp: 3 },
+                { nombre: "Arturo Prat de San Felipe", pts: 0, pj: 5, pg: 0, pp: 5 }
+            ];
+        
+            function actualizarTabla() {
+                let tabla = document.getElementById("tabla-equipos").getElementsByTagName("tbody")[0];
+        
+                // Ordenar por PTS de mayor a menor
+                equipos.sort((a, b) => b.pts - a.pts);
+        
+                // Limpiar tabla antes de actualizar
+                tabla.innerHTML = "";
+        
+                // Agregar las filas actualizadas
+                equipos.forEach(equipo => {
+                    let fila = `<tr>
+                        <td>${equipo.nombre}</td>
+                        <td>${equipo.pts}</td>
+                        <td>${equipo.pj}</td>
+                        <td>${equipo.pg}</td>
+                        <td>${equipo.pp}</td>
+                    </tr>`;
+                    tabla.innerHTML += fila;
+                });
+            }
+        
+    
+        
+            actualizarTabla(); // Actualizar la tabla con los cambios
+        </script>
+
+    <!-- Partidos del Grupo A -->
+    <h3>Partidos - Viernes 4 de Abril</h3>
+    <div class="partidos-container">
+        <div class="partidos">
+            <table>
+                <thead>
+                    <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>15:00</td><td>Boston College vs Dragons de Rancagua </td><td>Boston College</td><td></td></tr>
+                    <tr><td>16:00</td><td>Estadio Español vs Planeta Volei de la Serena</td><td>Estadio Español</td><td></td></tr>
+                    <tr><td>17:00</td><td>Arturo Prat de San Felipe vs SLA Valdivia </td><td>SLA Valdivia</td><td></td></tr>
+                    <tr><td>18:00</td><td>Boston College vs Planeta Vólei La Serena</td><td>Boston College</td><td></td></tr>
+                    <tr><td>19:00</td><td>Dragons de Rancagua vs SLA Valdivia </td><td>SLA Valdivia</td><td></td></tr>
+                    <tr><td>20:00</td><td>Estadio Español vs Arturo Prat de San Felipe</td><td>Estadio Español</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Partidos del Grupo A - Sábado 5 de Abril -->
+    <h3>Partidos - Sábado 5 de Abril</h3>
+    <div class="partidos-container">
+        <div class="partidos">
+            <table>
+                <thead>
+                    <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>10:00</td><td>Boston College vs SLA Valdivia</td><td>Boston College</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>11:00</td><td>Planeta Vólei La Serena vs Arturo Prat de San Felipe</td><td>Planeta Volei</td><td></td></tr>
+                    <tr><td>12:00</td><td>Dragons de Rancagua vs Estadio Español</td><td>Estadio Español</td><td><a href="https://www.youtube.com/@ClubDragonsvoley" target="_blank">📹</a></td></tr>
+                    <tr><td>13:00</td><td>SLA Valdivia vs Planeta Vólei La Serena</td><td>Planeta volei</td><td><a href="https://www.instagram.com/clubslavolley" target="_blank">📹</a></td></tr>
+                    <tr><td>14:00</td><td>Boston College vs Estadio Español</td><td>Boston College</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>15:00</td><td>Arturo Prat de San Felipe vs Dragons de Rancagua</td><td>Dragons</td><td><a href="https://www.youtube.com/@ClubDragonsvoley" target="_blank">📹</a></td></tr>
+                    <tr><td>16:00</td><td>SLA Valdivia vs Estadio Español</td><td>Estadio Español</td><td><a href="https://www.instagram.com/clubslavolley" target="_blank">📹</a></td></tr>
+                    <tr><td>17:00</td><td>Boston College vs Arturo Prat de San Felipe</td><td>Boston College</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                    <tr><td>18:00</td><td>Planeta Vólei La Serena vs Dragons de Rancagua</td><td>Planeta Volei</td><td><a href="https://www.instagram.com/constructoressustentables/?igsh=MWtkdjdiY2F6OGtvaA%3D%3D#" target="_blank">📹</a></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Botón de Transmisión en Vivo -->
+    <section class="live-stream">
+        <a href="https://www.youtube.com/@irtvdeportes" target="_blank" class="live-button">🔴 Transmisión en Vivo</a>
+    </section>
+
+    <!-- Mapa de Cómo Llegar -->
+    <section>
+        
+    <h2>Cómo llegar al Gimnasio Escuti Orrego</h2>
+    <p>Dirección: 2261225, Quillota, Valparaíso</p>
+    <section class="mapa-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.4743902872815!2d-71.26886692429268!3d-32.877204473759376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dc27f95809d7%3A0x42b207f0b4fa75b7!2sGimnasio%20Licenciado%20Santiago%20Escutti%20Orrego!5e0!3m2!1ses!2scl!4v1712012345678"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Torneo LINAME Sub 18 Quillota. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
