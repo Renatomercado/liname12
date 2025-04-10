@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partidos Grupo B - Torneo LINAME Sub 18 Quillota 2025</title>
+    <title>Partidos Grupo A - Torneo LINAME Sub 18 Quillota 2025</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+        body {
+            background: linear-gradient(to right, #1ce8f7, #03a5aa);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-<style>
-    body {
-        background: linear-gradient(to right, #b3beb4, #078003);
-        color: white;
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-    .buffet-card {
-        background: rgba(255, 255, 255, 0.9);
-        color: #333;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        margin: 20px auto;
-        width: 50%;
-    }
-    .buffet-card h3 {
-        color: #d35400;
-    }
-    .buffet-card p {
-        font-size: 18px;
-    }
-</style>
+        .buffet-card {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px auto;
+            width: 50%;
+        }
+
+        .buffet-card h3 {
+            color: #d35400;
+        }
+
+        .buffet-card p {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
 <body>
 
     <!-- Header -->
     <header class="header-container">
         <img src="https://pbs.twimg.com/profile_images/1015933869/Copia_de_Copia_de_Logo_Fevochi_400x400.JPG" alt="Logo FEVOCHI" class="header-logo">
-        <h1>Partidos Grupo B - Torneo LINAME Sub 18 Quillota 2025</h1>
+        <h1>Partidos Grupo B - CLASIFICATORIO Sub 12 Quillota 2025</h1>
         <img src="https://www.fevochi.cl/wp-content/uploads/2025/01/CIRCUITO-NACIONAL-DE-VOLEIBOL-PLAYA-2024-32-1024x1024.png" alt="LINAME" class="header-logo">
     </header>
 
@@ -44,20 +47,20 @@
         <button onclick="window.location.href='index.html';">Regresar al inicio</button>
     </div>
 
-    <!-- Card Promocional del Buffet -->
-  <div class="buffet-card">
-    <h3>¡Recarga Energía!</h3>
-    <p>Disfruta de deliciosas bebidas, café, completos, tapaditos y más en nuestro buffet. ¡Te esperamos en el gimnasio para que recargues energías y sigas disfrutando del torneo!</p>
-</div>
-
     <!-- Título y Grupo -->
-    <h2>Partidos Grupo B - Gimnasio Municipal CORVI</h2>
-    
-    <!-- Tabla de Equipos Grupo B -->
+    <h2>Partidos Grupo B - Gimnasio LICEO Escuti Orrego</h2>
+
+    <!-- Card Promocional del Buffet -->
+    <div class="buffet-card">
+        <h3>¡Recarga Energía!</h3>
+        <p>Disfruta de Nuestro buffet que tendremos a Diario en este GYM para que veas buen VOLEY degustando nuestros productos</p>
+    </div>
+
+<!-- Tabla de Equipos con Ordenación Automática -->
 <div class="grupos-container">
     <div class="grupo">
         <h3>Equipos Grupo B</h3>
-        <table id="tabla-equipos-b">
+        <table id="tabla-equipos">
             <thead>
                 <tr>
                     <th>Equipos</th>
@@ -68,96 +71,91 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td>Paul Harris Quillota</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>GIBA Requinoa</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>Vosther Vóley Viña del Mar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>Enigma Puente Alto</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>Puma Copiapó</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>San Martín de Quillota</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Colo Colo</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>IMV de Puente Alto </td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Union Volley</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Club Vosterh V del Mar</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Olimpo Voley de San Fdo</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
             </tbody>
         </table>
-    </div>
-</div>
-
-<script>
-    // Datos iniciales de los equipos del Grupo B
-    let equiposB = [
-        { nombre: "Paul Harris Quillota", pts: 10, pj: 5, pg: 5, pp: 0 },
-        { nombre: "GIBA Requinoa", pts: 8, pj: 5, pg: 4, pp: 1 },
-        { nombre: "Vosther Vóley Viña del Mar", pts: 6, pj: 5, pg: 3, pp: 2 },
-        { nombre: "Enigma Puente Alto", pts: 0, pj: 5, pg: 0, pp: 5 },
-        { nombre: "Puma Copiapó", pts: 4,pj: 5, pg: 2, pp: 3 },
-        { nombre: "San Martín de Quillota", pts: 2, pj: 5, pg: 1, pp: 4 }
-    ];
-
-    function actualizarTablaB() {
-        let tabla = document.getElementById("tabla-equipos-b").getElementsByTagName("tbody")[0];
-
-        // Ordenar por PTS de mayor a menor
-        equiposB.sort((a, b) => b.pts - a.pts);
-
-        // Limpiar la tabla antes de actualizar
-        tabla.innerHTML = "";
-
-        // Agregar las filas actualizadas
-        equiposB.forEach(equipo => {
-            let fila = `<tr>
-                <td>${equipo.nombre}</td>
-                <td>${equipo.pts}</td>
-                <td>${equipo.pj}</td>
-                <td>${equipo.pg}</td>
-                <td>${equipo.pp}</td>
-            </tr>`;
-            tabla.innerHTML += fila;
-        });
-    }
-
+        
+        <script>
+            // Datos iniciales de los equipos
+            let equipos = [
+                { nombre: "Colo Colo", pts: 0, pj: 0, pg: 0, pp: 0 },
+                { nombre: "IMV de Puente Alto", pts: 0, pj: 0, pg: 0, pp: 0 },
+                { nombre: "Union Volley", pts: 0, pj: 0, pg: 0, pp: 0 },
+                { nombre: "Club Vosterh V del Mar", pts: 0, pj: 0, pg: 0, pp: 0 },
+                { nombre: "Olimpo Voley de San Fdo", pts: 0, pj: 0, pg: 0, pp: 0 },
+                
+            ];
+        
+            function actualizarTabla() {
+                let tabla = document.getElementById("tabla-equipos").getElementsByTagName("tbody")[0];
+        
+                // Ordenar por PTS de mayor a menor
+                equipos.sort((a, b) => b.pts - a.pts);
+        
+                // Limpiar tabla antes de actualizar
+                tabla.innerHTML = "";
+        
+                // Agregar las filas actualizadas
+                equipos.forEach(equipo => {
+                    let fila = `<tr>
+                        <td>${equipo.nombre}</td>
+                        <td>${equipo.pts}</td>
+                        <td>${equipo.pj}</td>
+                        <td>${equipo.pg}</td>
+                        <td>${equipo.pp}</td>
+                    </tr>`;
+                    tabla.innerHTML += fila;
+                });
+            }
+        
     
-    actualizarTablaB(); // Actualizar la tabla con los cambios
-</script>
+        
+            actualizarTabla(); // Actualizar la tabla con los cambios
+        </script>
 
-<!-- Partidos del Grupo B - Viernes 4 de Abril -->
-<h3>Partidos - Viernes 4 de Abril</h3>
-<div class="partidos-container">
-    <div class="partidos">
-        <table>
-            <thead>
-                <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>15:00</td><td>Paul Harris Quillota vs San martín de Quillota</td><td>Paul Harris</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>16:00</td><td>PUMA Copiapó vs GIBA Requinoa</td><td>GIBA</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>17:00</td><td>Enigma Puente Alto vs Vosther volei V.del Mar</td><td>Vosther</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>18:00</td><td>Paul Harris Quillota vs GIBA Requinoa</td><td>Paul Harris</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>19:00</td><td>Vosther Vóley Viña del Mar vs San Martín de Quillota</td><td>Vosther</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>20:00</td><td>Enigma Pte Alto vs Puma Copiapó</td><td>Puma Copiapo</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-            </tbody>
-        </table>
+    <!-- Partidos del Grupo A -->
+    <h3>Partidos - Viernes 11 de Abril</h3>
+    <div class="partidos-container">
+        <div class="partidos">
+            <table>
+                <thead>
+                    <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>15:00</td><td>Olimpo Voley vs Colo Colo</td><td>-</td><td></td></tr>
+                    <tr><td>16:00</td><td>Club Vosterh vs IMV Pte Alto</td><td>-</td><td></td></tr>
+                    <tr><td>17:00</td><td>Union Voley vs Colo Colo</td><td>-</td><td></td></tr>
+                    <tr><td>18:00</td><td>IMV Pte Alto vs Olimpo Voley</td><td>-</td><td></td></tr>
+                    <tr><td>19:00</td><td>Union Voley vs Club Vosterh</td><td>-</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
-<!-- Partidos del Grupo B - Sábado 5 de Abril -->
-<h3>Partidos - Sábado 5 de Abril</h3>
-<div class="partidos-container">
-    <div class="partidos">
-        <table>
-            <thead>
-                <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
-            </thead>
-            <tbody>
-                <tr><td>10:00</td><td>Paul Harris Quillota vs Vosther Vóley Viña del Mar</td><td>Paul Harris</td><td><a href="https://www.youtube.com/@ClubPaulHarris/streams" target="_blank">📹</a></td></tr>
-                <tr><td>11:00</td><td>GIBA Requinoa vs Enigma Puente Alto</td><td>GIBA Requinoa</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>12:00</td><td>San Martín de Quillota vs Puma Copiapó</td><td>PUMA Copiapo</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>13:00</td><td>Vosther Vóley Viña del Mar vs GIBA Requinoa</td><td>GIBA Requinoa</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>14:00</td><td>Paul Harris Quillota vs Puma Copiapó </td><td>Paul Harris</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>15:00</td><td>Enigma Puente Alto vs San Martín de Quillota</td><td>San Martin</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>16:00</td><td>Vosther Vóley Viña del Mar vs Puma Copiapó</td><td>Vosther</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>17:00</td><td>Paul Harris Quillota vs Enigma Puente Alto</td><td>Paul Harris</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-                <tr><td>18:00</td><td>GIBA Requinoa vs San Martín de Quillota</td><td>GIBA Requinoa</td><td><a href="https://www.youtube.com/@irtvdeportes" target="_blank">📹</a></td></tr>
-            </tbody>
-        </table>
+    <h3>Partidos - Sábado 12 de Abril</h3>
+    <div class="partidos-container">
+        <div class="partidos">
+            <table>
+                <thead>
+                    <tr><th>Hora</th><th>Partido</th><th>Ganador</th><th>En Vivo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>10:00</td><td>Club Vosterh vs Olimpo Voley</td><td>-</td><td></td></tr>
+                    <tr><td>11:00</td><td>IMV Pte Alto vs Union Voley</td><td>-</td><td></td></tr>
+                    <tr><td>12:00</td><td>Colo Colo vs Club Vosterh</td><td>-</td><td></td></tr>
+                    <tr><td>13:00</td><td>Olimpo Voley vs Union Voley</td><td>-</td><td></td></tr>
+                    <tr><td>14:00</td><td>Colo Colo vs IMV Pte Alto</td><td>-</td><td></td></tr>
+                    <tr><td>17:00</td><td>3° Grupo A vs 4° Grupo B</td><td>-</td><td></td></tr>
+                    <tr><td>18:00</td><td>3° Grupo B vs 4° Grupo A</td><td>-</td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
+
     <!-- Botón de Transmisión en Vivo -->
     <section class="live-stream">
         <a href="https://www.youtube.com/@irtvdeportes" target="_blank" class="live-button">🔴 Transmisión en Vivo</a>
@@ -165,23 +163,22 @@
 
     <!-- Mapa de Cómo Llegar -->
     <section>
-        <h2>Cómo llegar al Gimnasio Municipal CORVI</h2>
-        <p>Dirección: 2261225, Quillota, Valparaíso</p>
+        
+    <h2>Cómo llegar al Gimnasio MUNICIPAL CORVI</h2>
+    <p>Dirección: 2261225, Quillota, Valparaíso</p>
+    <section class="mapa-container">
         <iframe
-            width="600"
-            height="450"
-            style="border:0"
-            loading="lazy"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.4743902872815!2d-71.26886692429268!3d-32.877204473759376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dc27f95809d7%3A0x42b207f0b4fa75b7!2sGimnasio%20Licenciado%20Santiago%20Escutti%20Orrego!5e0!3m2!1ses!2scl!4v1712012345678"
             allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.4743902872815!2d-71.26886692429268!3d-32.877204473759376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dc27f95809d7%3A0x42b207f0b4fa75b7!2sGimnasio%20Licenciado%20Santiago%20Escutti%20Orrego!5e0!3m2!1ses!2scl!4v1712012345678">
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Torneo LINAME Sub 18 Quillota. Todos los derechos reservados.</p>
-    </footer>
+        <p>&copy; NatoDev (Natodevelop@gmail.com)- 2025 Todos los derechos reservados. </p>
+      </footer>
 
 </body>
 </html>
+
